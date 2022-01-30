@@ -12,6 +12,7 @@
         }
 
         table {
+            width: 500px;
             border: 1px solid black;
             border-collapse: collapse;
         }
@@ -26,54 +27,76 @@
             border:1px solid black;
             padding: 8px;
         }
+
+        .cnome {
+            background-color: chartreuse
+        }
+
+        .cprof {
+            background-color: yellow;
+        }
+
+        .cgroup {
+            background-color: tomato;
+        }
+
+        
+
+    
     </style>
 </head>
 <body>
     <h1>Exercício de Tabela</h1>
 
     <table>
+
+        <colgroup>
+            <col class="cnome">
+            <col class="cgroup" span="2">
+            <col class="cprof">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
-            <th scope="col" colspan="2">Nome</th>
+            <th scope="col" >Nome</th>
             <th scope="col">Sexo</th>
             <th scope="col">Idade</th>
-            <th scope="col" colspan="2">Profissão</th>
+            <th scope="col" >Profissão</th>
         </tr>
         <tr>
-            <td colspan="2">Ana Maria</td>
+            <td>Ana Maria</td>
             <td>F</td>
             <td>25</td>
             <td colspan="2">Jornalista</td>
         </tr>
         <tr>
-            <td colspan="2">Claudio</td>
+            <td >Claudio</td>
             <td>M</td>
             <td>28</td>
-            <td colspan="2">Programador</td>
+            <td>Programador</td>
         </tr>
         <tr>
-            <td colspan="2">Gustavo</td>
+            <td>Gustavo</td>
             <td>M</td>
             <td>42</td>
-            <td colspan="2">Professor</td>
+            <td>Professor</td>
         </tr>
         <tr>
-            <td colspan="2">Hélio</td>
+            <td>Hélio</td>
             <td>M</td>
             <td>19</td>
-            <td colspan="2">Vendedor</td>
+            <td>Vendedor</td>
         </tr>
         <tr>
-            <td colspan="2">Maria</td>
+            <td>Maria</td>
             <td>F</td>
             <td>39</td>
-            <td colspan="2">Médica</td>
+            <td>Médica</td>
         </tr>
         <tr>
-            <td colspan="2">Otávio</td>
+            <td>Otávio</td>
             <td>M</td>
             <td>22</td>
-            <td colspan="2">Nutricionista</td>
+            <td>Nutricionista</td>
         </tr>
     </table>
     
